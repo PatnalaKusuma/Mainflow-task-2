@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Web Page</title>
+  <style>
+    :root {
+      --primary-color: #3498db;
+      --secondary-color: #2ecc71;
+      --background-color: #ecf0f1;
+      --text-color: #2c3e50;
+      --font-size-base: 16px;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      font-size: var(--font-size-base);
+    }
+
+    header, footer {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1rem;
+    }
+
+    .item {
+      flex: 1 1 100%;
+      margin: 1rem 0;
+      background-color: var(--secondary-color);
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Media Queries */
+    @media (min-width: 768px) {
+      .item {
+        flex: 1 1 45%;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .item {
+        flex: 1 1 30%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nature Clicks</h1>
+  </header>
+
+  <div class="container">
+    <div class="item">
+      <h2>Item 1</h2>
+      <p>This is a description for item 1.</p>
+      <img src="https://tse4.mm.bing.net/th/id/OIP.HT2MhcNUZuI5eC_iU48gywHaFB?rs=1&pid=ImgDetMain" alt="Placeholder image for item 1">
+    </div>
+    <div class="item">
+      <h2>Item 2</h2>
+      <p>This is a description for item 2.</p>
+      <img src="https://tse2.mm.bing.net/th/id/OIP.G37tgeQqSNt7v2oPfj9ltQHaE7?rs=1&pid=ImgDetMain" alt="Placeholder image for item 2">
+    </div>
+    <div class="item">
+      <h2>Item 3</h2>
+      <p>This is a description for item 3.</p>
+      <img src="https://tse3.mm.bing.net/th/id/OIP.L4I6vqjeGE_aqoK1JPiIfwHaE8?w=800&h=534&rs=1&pid=ImgDetMain" alt="Placeholder image for item 3">
+    </div>
+    <div class="item">
+      <h2>Item 4</h2>
+      <p>This is a description for item 4.</p>
+      <img src="https://i.pinimg.com/originals/6e/91/59/6e9159a1d47c5759b2820ace1d5b9ada.jpg" alt="Placeholder image for item 4">
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Responsive Web Page. All rights reserved.</p>
+  </footer>
+</body>
+</html>
